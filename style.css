@@ -367,6 +367,10 @@ hr {
         text-align: center;
     }
 
+    .services__wrapper-img:hover {
+        cursor: pointer;
+    }
+
     .services__wrapper-img img {
         width: 60%;
     }
@@ -377,5 +381,44 @@ hr {
 
     .services__logo img {
         width: 40%;
+    }
+}
+
+/* работы */
+
+.works {
+    background-color: #111111;
+}
+
+h2 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+    font-size: 48px;
+    text-align: center;
+}
+
+.works__menu {
+    font-size: 24px;
+    padding-bottom: 6%;
+    text-align: center;
+    justify-content: center;
+}
+
+.works__img-wrapper {
+    padding-bottom: 5%;
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+
+    .works__img-wrapper {
+        text-align: center;
+    }
+
+    .works__img-wrapper img {
+        width: 60%;
     }
 }
