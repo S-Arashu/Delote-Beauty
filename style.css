@@ -7,15 +7,12 @@
 
 body {
     max-width: 1920px;
-}
-
-/* Header */
-
-header {
     background-image: url(./img/bgc.png);
     height: 85vh;
     background-repeat: no-repeat;
 }
+
+/* Header */
 
 .header__hidden-menu {
     display: none;
