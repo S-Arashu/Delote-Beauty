@@ -44,6 +44,22 @@ body {
 .header__icon {
     width: 24px;
     height: 24px;
+    position: fixed;
+    left: 15%;
+}
+
+.header__left {
+    position: fixed;
+    left: 20%;
+}
+
+.header__logo {
+    position: fixed;
+}
+
+.header__right {
+    position: fixed;
+    right: 20%;
 }
 
 .header__icon img {
@@ -78,7 +94,7 @@ body {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 50px;
+    top: 40px;
     right: 316px;
     width: 26px;
     height: 26px;
@@ -150,14 +166,18 @@ body {
 
 .header__bottom {
     max-width: 540px;
-    /* margin-left: auto;
-    margin-right: auto; */
     text-align: center;
     margin: 260px auto;
+    height: auto;
 }
 
 h1 {
     font-size: 72px;
+}
+
+hr {
+    position: fixed;
+    left: 13%;
 }
 
 @media (max-width: 1800px){
@@ -288,5 +308,74 @@ h1 {
 
     #menu__toggle:checked~.menu__btn>span {
         left: -155px;
+    }
+}
+
+/* секция сервисы */
+
+.wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services {
+    background-color: #111111;
+}
+
+.services__image {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.services__desc {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 7%;
+}
+
+.services__desc p {
+    line-height: 30px;
+    font-size: 27px;
+}
+
+.services__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.services__wrapper-img {
+    padding-bottom: 60px;
+}
+
+.services__cosmetics {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+
+    .services__wrapper {
+        text-align: center;
+    }
+
+    .services__wrapper-img img {
+        width: 60%;
+    }
+
+    .services__logo {
+        text-align: center;
+    }
+
+    .services__logo img {
+        width: 40%;
     }
 }
