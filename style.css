@@ -7,10 +7,10 @@
 
 body {
     max-width: 1920px;
-    background-image: url(./img/bgc.png);
+    /* background-image: url(./img/bgc.png); */
     background-color: #111111;
     height: 85vh;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 /* Header */
@@ -40,6 +40,14 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
+}
+
+.header__banner {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
 }
 
 .header__icon {
@@ -481,5 +489,35 @@ h2 {
 
     .footer__wrapper {
         text-align: center;
+    }
+}
+
+/* секция контакты */
+
+.contacts h1 {
+    font-size: 48px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.contacts__map {
+    height: 50vh;
+    background-color: gray;
+    width: 100%;
+}
+
+.contacts__wrapper { 
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px){
+    .contacts h1 {
+        font-size: 24px;
     }
 }
