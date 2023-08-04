@@ -7,10 +7,9 @@
 
 body {
     max-width: 1920px;
-    /* background-image: url(./img/bgc.png); */
+    margin-right: auto;
+    margin-left: auto;
     background-color: #111111;
-    height: 85vh;
-    /* background-repeat: no-repeat; */
 }
 
 /* Header */
@@ -547,5 +546,88 @@ h2 {
 
     .team__photo img {
         width: 100%;
+    }
+}
+
+/* секция с прайсом */
+
+.price__title {
+    font-size: 48px;
+}
+
+.price__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.price__services {
+    border-block-end: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    transition: all .3s ease-in-out;
+}
+
+.price__services-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90px;
+    padding-bottom: 20px;
+}
+
+.price__services-name h4 {
+    font-size: 27px;
+}
+
+.price__services-cost {
+    font-size: 18px;
+}
+
+.price__services-common {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 530px;
+    transition: all .3s ease-in-out;
+}
+
+.price__image {
+    max-width: 630px;
+    margin: 2%;
+    transition: all .3s ease-in-out;
+}
+
+.price__image img {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+
+    .no-active {
+        display: none;
+    }
+
+    .price__wrapper {
+        flex-direction: column;
+    }
+
+    .price__image {
+        margin-bottom: 5%;
+    }
+
+    .price__services-common {
+        width: -webkit-fill-available;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .price__services {
+        flex-direction: column;
+        padding-bottom: 10%;
     }
 }
