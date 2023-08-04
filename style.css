@@ -521,3 +521,31 @@ h2 {
         font-size: 24px;
     }
 }
+
+/* секция наши мастера */
+
+.team__title {
+    font-size: 48px;
+}
+
+.team__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team__photo {
+    max-width: 420px;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 700px) {
+    .team__photo {
+        max-width: 220px;
+    }
+
+    .team__photo img {
+        width: 100%;
+    }
+}
